@@ -3,7 +3,6 @@
 #
 import sys
 
-
 if __name__ == '__main__':
 
     keyname = None
@@ -15,15 +14,16 @@ if __name__ == '__main__':
         val = int(val)
  
         if key == keyname:
-
+      
             total += val
         else:
-
+         
             if keyname is not None:
-               
+          
                 sys.stdout.write("{}\t{}\n".format(keyname, total))
 
-            kayname = key
+            keyname = key
             total = val
 
     sys.stdout.write("{}\t{}\n".format(keyname, total))
+
