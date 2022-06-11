@@ -4,6 +4,7 @@
 import sys
 from collections import defaultdict
 import operator
+from traceback import StackSummary
 
 if __name__ == '__main__':
 
@@ -16,9 +17,9 @@ if __name__ == '__main__':
         Dict[key].append(val)
 
     for clave, lista in Dict.items():
-        sum = round(sum(lista), 1)
-        prom = sum(lista)/len(lista)
+        suma= round(sum(lista), 1)
+        promedio = sum(lista)/len(lista)
 
-        valores = [clave, sum, prom]  
+        valores = [clave, suma, promedio]  
            
         sys.stdout.write("{}\t{}\t{}\n".format(valores[0], valores[1], valores[2]))
