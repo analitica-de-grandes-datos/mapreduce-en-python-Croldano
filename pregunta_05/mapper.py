@@ -7,8 +7,8 @@ if __name__ == "__main__":
 
     for row in sys.stdin:
 
-        divide = row.strip().split("   ")
-        col01 = divide[1]
+        divido = row.strip().split("   ")
+        col01 = divido[1]
         dividefecha= col01.split("-")
         mes = dividefecha[1]
   
