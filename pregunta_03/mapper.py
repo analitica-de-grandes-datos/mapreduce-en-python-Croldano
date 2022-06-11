@@ -7,8 +7,8 @@ if __name__ == "__main__":
 
     for row in sys.stdin:
         
-        Limpiar_linea = row.strip()
+        limpiarlinea = row.strip()
             
-        letra, numero = limpiar_linea.split(",") 
+        letra, numero = limpiarlinea.split(",") 
 
         sys.stdout.write(f"{letra}\t{numero}\n")
